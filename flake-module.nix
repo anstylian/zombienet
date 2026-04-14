@@ -247,6 +247,8 @@
           makeCacheWritable = true;
         };
 
+        zombienet = default;
+
         update = pkgs.writeShellApplication {
           name = "update";
           runtimeInputs = [pkgs.prefetch-npm-deps];
